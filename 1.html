@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Store Landing Page</title>
+<script src="1.js"></script>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    /* Navigation bar */
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ce7caf;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 1000;
+    }
+
+    nav a {
+        color: rgb(24, 21, 21);
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 0 5px;
+        background-color: #f2f6f7;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #b2cae3;
+    }
+
+    /* Sections */
+    section {
+        padding: 100px 20px;
+        min-height: 100vh;
+    }
+
+    /* Home section with images */
+    #home {
+        background: #f0deee;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        width: 250px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    /* About & Contact */
+    .box {
+        background-color: #e6f0ff;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 700px;
+        margin: auto;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        background: #ff00ea;
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#books">Books</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h1 aria-flowto="h1"><b>Welcome to BlueSky Bookstore</b></h1>
+    <p>Your one-stop shop for stories, knowledge, and inspiration.</p>
+    <div class="cards">
+        <div class="card">
+            <img src="book1.jpg" alt="Book 1">
+            <h3>Fiction</h3>
+            <p>Imaginative stories that transport you to new worlds, filled with unforgettable characters and adventures.
+
+</p>
+        </div>
+        <div class="card">
+            <img src="book2.jpg" alt="Book 2">
+            <h3>Non fiction</h3></h3>
+            <p>Unlock your full potential with powerful life-changing habits.</p>
+        </div>
+        <div class="card">
+            <img src="book3.jpg" alt="Book 3">
+            <h3>Self help</h3>
+            <p>Books that inspire personal growth, boost confidence, and teach practical strategies for success in life.</p>
+        </div>
+        <div class="card">
+            <img src="book4.jpg" alt="Book 3">
+            <h3>Biography</h3>
+            <p>Discover recipes that warm both heart and soul.</p>
+        </div>
+    </div>
+</section>
+
+<!-- About section -->
+<section id="about">
+    <div class="box">
+        <h2>About Us</h2>
+        <p>At BlueSky Bookstore, we believe that books are the keys to countless worlds. 
+        Our collection includes everything from timeless classics to modern bestsellers, 
+        catering to readers of all ages and interests.</p>
+    </div>
+</section>
+
+<!-- Books section -->
+<section id="books">
+    <div class="cards">
+        <div class="card">
+            <img src="book8.jpg" alt="Book 8">
+            <h3>Sudha Murthy</h3>
+            <p>How i thought my grandma to read</p>
+        </div>
+            <div class="card">
+                <img src="book9.jpg" alt="Book 9">
+                <h3>Lauren Graham</h3>
+                <p>Gilmore girls talking as fast as i can</p>
+            </div>
+                <div class="card">
+                    <img src="book10.jpg" alt="Book 10">
+                    <h3>Ana Hyung</h3>
+                    <p>Twisted Love</p>
+                </div>
+                <div class="cards">
+        <div class="card">
+            <img src="book7.jpg" alt="Book 7">
+            <h3>R K Narayan</h3>
+            <p>Nani Ki Kahani</p>
+        </div>
+        <div class="card">
+            <img src="book5.jpg" alt="Book 5">
+            <h3>Enid Blyton</h3>
+            <p>The Famous Fiva</p>
+        </div>
+        <div class="card">
+            <img src="book6.jpg" alt="Book 6">
+            <h3>Ruskin Bond</h3>
+            <p>The Blue Umbrella</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="box">
+        <h2>Contact Us</h2>
+        <p>Email: contact@blueskybooks.com</p>
+        <p>Phone: +91 ########08</p>
+        <p>Follow us on Instagram: @blueskybooks</p>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 BlueSky Bookstore. All Rights Reserved.
+</footer>
+
+</body>
+</html>
